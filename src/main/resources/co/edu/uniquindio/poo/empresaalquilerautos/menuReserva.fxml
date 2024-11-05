@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:id="pn_Reserva" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lbl_realizarReserva" layoutX="24.0" layoutY="28.0" text="Realizar Reserva">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sp_realizarReserva" layoutX="14.0" layoutY="67.0" prefHeight="0.0" prefWidth="353.0" />
+      <Label fx:id="lbl_seleccionarCliente" layoutX="24.0" layoutY="90.0" text="Seleccionar Cliente">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cb_seleccionarCliente" layoutX="179.0" layoutY="88.0" prefWidth="150.0" />
+      <Label fx:id="lbl_seleccionarVehiculo" layoutX="24.0" layoutY="129.0" text="Seleccionar vehiculo">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cb_seleccionarVehiculo" layoutX="179.0" layoutY="127.0" prefWidth="150.0" />
+      <Label fx:id="lbl_diasReserva" layoutX="24.0" layoutY="164.0" text="Dias de reserva">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_diasReserva" layoutX="180.0" layoutY="162.0" />
+      <Button fx:id="btn_VolverDeRealizarReserva" layoutX="24.0" layoutY="260.0" mnemonicParsing="false" text="Volver" />
+      <Button fx:id="btn_realizarReserva" layoutX="24.0" layoutY="221.0" mnemonicParsing="false" text="Realizar reserva" />
+      <Separator fx:id="sp_camposReserva" layoutX="15.0" layoutY="200.0" prefHeight="0.0" prefWidth="353.0" />
+   </children>
+</Pane>

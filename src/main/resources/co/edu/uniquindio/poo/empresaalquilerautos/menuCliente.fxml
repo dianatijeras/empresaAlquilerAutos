@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pn_registroCliente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lbl_Cliente" layoutX="19.0" layoutY="25.0" text="Cliente">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sp_separacionRegistroCliente" layoutX="14.0" layoutY="61.0" prefHeight="0.0" prefWidth="355.0" />
+      <Label fx:id="lbl_nombreCliente" layoutX="19.0" layoutY="85.0" text="Nombre">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nombreCliente" layoutX="108.0" layoutY="82.0" />
+      <Label fx:id="lbl_apellidosCliente" layoutX="16.0" layoutY="119.0" text="Apellidos">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_apellidosCliente" layoutX="108.0" layoutY="116.0" />
+      <Label fx:id="lbl_correoCliente" layoutX="16.0" layoutY="156.0" text="Correo">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_correoCliente" layoutX="108.0" layoutY="153.0" />
+      <Label fx:id="lbl_cedulaCliente" layoutX="16.0" layoutY="192.0" text="Cedula">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_cedulaCliente" layoutX="108.0" layoutY="189.0" />
+      <Label fx:id="lbl_telefonoCliente" layoutX="17.0" layoutY="228.0" text="Telefono">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_telefonoCliente" layoutX="108.0" layoutY="225.0" />
+      <Separator fx:id="sp_separacionCamposRegistro" layoutX="17.0" layoutY="273.0" prefHeight="0.0" prefWidth="355.0" />
+      <Button fx:id="btn_registrarCliente" layoutX="18.0" layoutY="293.0" mnemonicParsing="false" text="Registrar" />
+      <Button fx:id="btn_volver" layoutX="19.0" layoutY="342.0" mnemonicParsing="false" text="Volver" />
+      <Button fx:id="btn_BuscarCliente" layoutX="108.0" layoutY="293.0" mnemonicParsing="false" text="Buscar" />
+   </children>
+</Pane>
