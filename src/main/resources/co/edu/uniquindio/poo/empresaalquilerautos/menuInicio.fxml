@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<Pane fx:id="pn_seleccion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.empresaalquilerautos.viewController.InicioViewController">
+   <children>
+      <Button fx:id="btn_registrarEliminarVehiculo" layoutX="26.0" layoutY="102.0" mnemonicParsing="false" onAction="#onClickRegistrarVehiculo" text="Registrar o Buscar Vehiculo">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_registrarCliente" layoutX="26.0" layoutY="151.0" mnemonicParsing="false" onAction="#onClickRegistrarCliente" prefHeight="29.0" prefWidth="174.0" text="Registrar o Buscar Cliente">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_realizarReserva" layoutX="26.0" layoutY="200.0" mnemonicParsing="false" onAction="#onClickRealizarReserva" prefHeight="29.0" prefWidth="112.0" text="realizar reserva">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_listadoReservas" layoutX="26.0" layoutY="251.0" mnemonicParsing="false" onAction="#onClickListadoReservas" prefHeight="29.0" prefWidth="112.0" text="listado reservas">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_tituloMenuPrincipal" layoutX="26.0" layoutY="20.0" prefHeight="29.0" prefWidth="393.0" text="Sistema de gestion ">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sp_separacionMenuPrincipal" layoutX="8.0" layoutY="86.0" prefHeight="1.0" prefWidth="297.0" />
+      <Label fx:id="lbl_tituloMenuPrincipal1" layoutX="26.0" layoutY="49.0" prefHeight="29.0" prefWidth="393.0" text="Alquiler de vehiculos">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

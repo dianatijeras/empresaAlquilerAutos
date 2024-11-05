@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:id="pn_registroCliente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="pn_registroCliente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.empresaalquilerautos.viewController.ClienteViewController">
    <children>
       <Label fx:id="lbl_Cliente" layoutX="19.0" layoutY="25.0" text="Cliente">
          <font>
@@ -46,8 +46,8 @@
       </Label>
       <TextField fx:id="txt_telefonoCliente" layoutX="108.0" layoutY="225.0" />
       <Separator fx:id="sp_separacionCamposRegistro" layoutX="17.0" layoutY="273.0" prefHeight="0.0" prefWidth="355.0" />
-      <Button fx:id="btn_registrarCliente" layoutX="18.0" layoutY="293.0" mnemonicParsing="false" text="Registrar" />
-      <Button fx:id="btn_volver" layoutX="19.0" layoutY="342.0" mnemonicParsing="false" text="Volver" />
-      <Button fx:id="btn_BuscarCliente" layoutX="108.0" layoutY="293.0" mnemonicParsing="false" text="Buscar" />
+      <Button fx:id="btn_registrarCliente" layoutX="18.0" layoutY="293.0" mnemonicParsing="false" onAction="#onClickRegistrarCliente" text="Registrar" />
+      <Button fx:id="btn_volver" layoutX="19.0" layoutY="342.0" mnemonicParsing="false" onAction="#onClickVolver" text="Volver" />
+      <Button fx:id="btn_BuscarCliente" layoutX="108.0" layoutY="293.0" mnemonicParsing="false" onAction="#onClickBuscar" text="Buscar" />
    </children>
 </Pane>

@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<Pane fx:id="pn_menuReservasRealizadas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.empresaalquilerautos.viewController.ReservasRealizadasViewController">
+   <children>
+      <Label fx:id="lbl_ReservasRealizadas" layoutX="21.0" layoutY="19.0" text="Reservas realizadas">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sp_separacionReservasRealizadas" layoutX="13.0" layoutY="56.0" prefHeight="2.0" prefWidth="378.0" />
+      <TableView fx:id="tb_reservasRealizadas" layoutX="22.0" layoutY="76.0" prefHeight="228.0" prefWidth="358.0">
+        <columns>
+          <TableColumn fx:id="tbc_Cliente" prefWidth="84.0" text="Cliente" />
+          <TableColumn fx:id="tbc_vehiculo" prefWidth="79.0" text="Vehiculo" />
+            <TableColumn fx:id="tbc_diasDeReserva" prefWidth="101.0" text="Dias de reserva" />
+            <TableColumn fx:id="tbc_costoTotal" prefWidth="93.0" text="Costo total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_VolverReservasRealizadas" layoutX="21.0" layoutY="317.0" mnemonicParsing="false" onAction="#onClickVolverInicio" text="Volver" />
+   </children>
+</Pane>

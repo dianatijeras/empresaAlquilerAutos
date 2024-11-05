@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane fx:id="pn_registroVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="pn_registroVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.empresaalquilerautos.viewController.VehiculoViewController">
    <children>
       <Label fx:id="lbl_matricula" layoutX="28.0" layoutY="80.0" prefHeight="27.0" prefWidth="63.0" text="Matricula">
          <font>
@@ -47,20 +47,56 @@
       <Separator fx:id="sp_separacionRegistrarVehiculo" layoutX="13.0" layoutY="65.0" prefHeight="4.0" prefWidth="397.0" />
       <Separator fx:id="sp_separacionRegistros" layoutX="14.0" layoutY="231.0" prefHeight="4.0" prefWidth="397.0" />
       <Separator fx:id="sp_separacionTipoVehiculo" layoutX="14.0" layoutY="295.0" prefHeight="4.0" prefWidth="397.0" />
-      <Button fx:id="btn_registrarVehiculo" layoutX="28.0" layoutY="311.0" mnemonicParsing="false" text="Registrar">
+      <Button fx:id="btn_registrarVehiculo" layoutX="22.0" layoutY="452.0" mnemonicParsing="false" onAction="#onClickRegistrarVehiculo" text="Registrar">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
-      <Button fx:id="btn_volverMenuPrincipal" layoutX="28.0" layoutY="356.0" mnemonicParsing="false" text="Volver">
+      <Button fx:id="btn_volverMenuPrincipal" layoutX="22.0" layoutY="506.0" mnemonicParsing="false" onAction="#onClickVolverInicio" text="Volver">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
-      <Button fx:id="btn_BuscarVehiculo" layoutX="124.0" layoutY="311.0" mnemonicParsing="false" text="Buscar">
+      <Button fx:id="btn_BuscarVehiculo" layoutX="122.0" layoutY="452.0" mnemonicParsing="false" onAction="#onClickBuscarVehiculo" text="Buscar">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
+      <Label fx:id="lbl_tituloAuto" layoutX="25.0" layoutY="306.0" prefHeight="27.0" prefWidth="63.0" text="Auto">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sp_separacionTipoAuto" layoutX="13.0" layoutY="340.0" prefHeight="4.0" prefWidth="397.0" />
+      <Label fx:id="lbl_tipoCaroNumPuertas" layoutX="130.0" layoutY="305.0" prefHeight="27.0" prefWidth="126.0" text="Numero de puertas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_numPuertas" layoutX="289.0" layoutY="306.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label fx:id="lbl_tituloCamioneta" layoutX="25.0" layoutY="351.0" prefHeight="27.0" prefWidth="77.0" text="Camioneta">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator fx:id="sp_separacionTipoCamioneta" layoutX="13.0" layoutY="384.0" prefHeight="4.0" prefWidth="397.0" />
+      <Label fx:id="lbl_CamionetaCapCarga" layoutX="130.0" layoutY="351.0" prefHeight="27.0" prefWidth="126.0" text="Capacidad de carga">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_capacidadCarga" layoutX="289.0" layoutY="352.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label fx:id="lbl_tituloMoto" layoutX="25.0" layoutY="395.0" prefHeight="27.0" prefWidth="77.0" text="Moto">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_MotoEsAutomatica" layoutX="130.0" layoutY="395.0" prefHeight="27.0" prefWidth="126.0" text="¿Es automatica?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="Cbx_MotoEsAutomatica" layoutX="293.0" layoutY="400.0" mnemonicParsing="false" />
+      <Separator fx:id="sp_separacionTipoMoto" layoutX="14.0" layoutY="429.0" prefHeight="4.0" prefWidth="397.0" />
    </children>
 </Pane>
